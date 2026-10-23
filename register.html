@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Photography Club | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>The Photography Club</h1>
+        <p>To capture the stories and un-noticed moments</p>
+<nav>
+    <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">External Portal</a></li>
+    </ul>
+</nav>
+        
+    </header>
+
+<main>
+    <section>
+        <h2>Registration Form</h2>
+
+        <form id="registration form">
+            <fieldset>
+                <legend>Your details</legend>
+                <label for="Name">Name:</label>
+                <input type="text" id="name" name="name" required minlength="4" placeholder="Rahim">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="rollnumber@qu.edu.pk">
+
+                <label for="phone">Mobile Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="03002816173">
+
+           
+            </fieldset>
+
+            <fieldset>
+                <legend>Event Information and Options</legend>
+
+                <label for="select event">Event Selection:</label>
+                <select id="select event" name="selectEvent" required>
+                    <option value="" >Choose an option please</option>
+                    <option value="Photowalk">Campus architectural photography</option>
+                    <option value="Photo Workshop">Potrait workshop</option>
+                    <option value="Seminar">Digital seminar</option>
+                    <option value="Exhibition">Student Exhibition</option>
+                    
+                </select>
+
+                <label for="Our socials"></label>
+                <input type="radio" id="Our socials" name="Our" value="Social Media" checked> Social Media
+                
+
+                <label for="hear-poster"></label>
+                <input type="radio" id="hear-poster" name="hear" value="Campus Poster"> Campus Poster
+                
+
+                <label for="hear-friend"></label>
+                <input type="radio" id="hear-friend" name="hear"value="Friend"> Friend
+                
+            
+                </fieldset>
+
+                <button type="submit">Submit the Registration Form</button>
+            </form>
+            <p id="status message"></p>
+        </section>
+
+        <section>
+            <h2>Saved Registrations</h2>
+            <div id="display-container"></div>
+            <button type="button" id="clear-btn">Clear All</button>
+        </section>
+            </fieldset>
+        </form>
+   
+</main>
+<footer>
+        <p>2026  Photography Club</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+    </body>
+    </html>
