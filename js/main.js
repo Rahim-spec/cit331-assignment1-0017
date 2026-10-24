@@ -22,6 +22,7 @@ function renderRegistrations() {
 
 
 if (form) {
+    
         form.addEventListener('submit', (e) => {
             e.preventDefault(); 
             const fullname = document.getElementById('fullname').value;
