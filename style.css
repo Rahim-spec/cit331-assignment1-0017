@@ -54,6 +54,11 @@ nav a.actve{
     font-weight: bold;
 }
 
+.index{
+    text-align: center;
+    margin-left: auto;
+}
+
 /*attribute selector*/
  a[href^="https"] {
      color: #93c5fd;
@@ -224,3 +229,5 @@ footer {
         align-items: center;
     }
 }
+
+
